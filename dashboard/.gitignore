@@ -1,0 +1,5 @@
+node_modules/
+dist/
+# NRS posting records (customer data, IRNs) and daily logs
+data/
+logs/*.log

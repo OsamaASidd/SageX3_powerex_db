@@ -1,0 +1,28 @@
+{
+  "name": "sage-x3-nrs-middleware",
+  "version": "1.0.0",
+  "description": "Middleware that syncs Sage X3 invoices and credit notes to the Cryptware NRS/FIRS e-invoicing API",
+  "private": true,
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "sage:inspect": "ts-node src/sage/inspect.ts",
+    "nrs:smoke-test": "ts-node scripts/test-nrs-flow.ts",
+    "viewer": "ts-node src/viewer/server.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-cron": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "@types/node-cron": "^3.0.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  }
+}
